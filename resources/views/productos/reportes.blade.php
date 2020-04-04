@@ -9,7 +9,7 @@
 <div >
   <hr> 
 
-<h5  >  Reportes </h5>
+<h4> Reportes </h4>
 
 
 <form class="form-inline" id="pdf"  enctype="multipart/formdata">
@@ -18,7 +18,7 @@
    <select name="select_almacen" required class="form-control custom-select" id="select_almacen">
    <option selected="" >Selecciona un Almacen</option>
   @foreach($almacenes as $almacen)
-  <option value="{{$almacen->rowid}}+{{$almacen->lieu}}">{{$almacen->lieu}}</option>
+  <option value="{{$almacen->rowid}}">{{$almacen->lieu}}</option>
   @endforeach
   </select>
    </div>
