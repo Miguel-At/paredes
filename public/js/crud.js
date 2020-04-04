@@ -1,12 +1,23 @@
  var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
  
+var ruta="https://paredes925.herokuapp.com/autocomplete";
+var ruta_de_listar="https://paredes925.herokuapp.com/product";
+var ruta_de_borrar="https://paredes925.herokuapp.com/borrar";
+var ruta_de_guardar="https://paredes925.herokuapp.com/guardar";
+var ruta_de_actualizar="https://paredes925.herokuapp.com/actualizar";
+var ruta_de_elegir="https://paredes925.herokuapp.com/elegir";
+
+
+https://paredes925.herokuapp.com/
+//local 
+/*
 var ruta="http://localhost:8080/invent/public/autocomplete";
 var ruta_de_listar="http://localhost:8080/invent/public/product";
 var ruta_de_borrar="http://localhost:8080/invent/public/borrar";
 var ruta_de_guardar="http://localhost:8080/invent/public/guardar";
 var ruta_de_actualizar="http://localhost:8080/invent/public/actualizar";
 var ruta_de_elegir="http://localhost:8080/invent/public/elegir";
-
+*/
 
 
 //idioma de la tabla 
