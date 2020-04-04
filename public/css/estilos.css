@@ -1,0 +1,30 @@
+#footer { position: fixed; right: 0px; bottom: 10px; text-align: center;border-top: 1px solid black;}
+        #footer .page:after { content: counter(page , decimal); }
+ @page { margin: 20px 30px 40px 50px; }
+
+
+#loadimg{
+	height: 10px;
+}
+
+
+#imgnone{
+display: none;
+}
+
+
+
+#mensaje{
+display: none;
+
+}
+
+#inventario_de_almacen{
+	display: none;
+}
+#alerta_de_error{
+display: none;	}
+
+#btn_inicio{
+	background-color: black;
+}
