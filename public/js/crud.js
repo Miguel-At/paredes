@@ -6,12 +6,12 @@
 
 
 
-var ruta=""https://paredes925.herokuapp.com/invent/public/autocomplete";
-var ruta_de_listar=""https://paredes925.herokuapp.com/invent/public/product";
-var ruta_de_borrar=""https://paredes925.herokuapp.com/invent/public/borrar";
-var ruta_de_guardar=""https://paredes925.herokuapp.com/invent/public/guardar";
-var ruta_de_actualizar=""https://paredes925.herokuapp.com/invent/public/actualizar";
-var ruta_de_elegir=""https://paredes925.herokuapp.com/invent/public/elegir";
+var ruta="https://paredes925.herokuapp.com/invent/public/autocomplete";
+var ruta_de_listar="https://paredes925.herokuapp.com/invent/public/product";
+var ruta_de_borrar="https://paredes925.herokuapp.com/invent/public/borrar";
+var ruta_de_guardar="https://paredes925.herokuapp.com/invent/public/guardar";
+var ruta_de_actualizar="https://paredes925.herokuapp.com/invent/public/actualizar";
+var ruta_de_elegir="https://paredes925.herokuapp.com/invent/public/elegir";
 
 
 
