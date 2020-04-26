@@ -24,7 +24,7 @@ class Almacen extends Controller
 
        public function index(Request $request)
        {
-       $datos['almacenes']= DB::table('llx_entrepot')->where('rowid', '!=', 1 ,'AND', 'lieu', '!=', 'ALMACEN PRINCIPAL')->paginate(5);
+       $datos['almacenes']= DB::table('llx_entrepot')->paginate(6);
          return view('productos.invent',$datos);
         }
 
@@ -49,6 +49,9 @@ class Almacen extends Controller
           $datos=request()->except('_token');
           $value =session()->get('almacen');
           $selection=productos::join('llx_product_stock','llx_product_stock.fk_product','=','llx_product.rowid')->select('llx_product.rowid','llx_product_stock.fk_entrepot','llx_product.description','llx_product_stock.reel','llx_product.ref','llx_product.price','llx_product_stock.rowid as fk_stock')->where('llx_product.ref', '=',$datos  )->where('llx_product_stock.fk_entrepot', '=',$value )->get();
+
+               
+
             if(inventario_tem::where('ref', '=',$datos)->where('fk_entrepot', '=',$value )->exists()){
               $increment=inventario_tem::where('ref','=',$datos)->increment('tem_stock');
              }else{

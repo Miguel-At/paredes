@@ -4,19 +4,17 @@
 // en host
 
 
-
-
-var ruta="https://paredes925.herokuapp.com/invent/public/autocomplete";
-var ruta_de_listar="https://paredes925.herokuapp.com/invent/public/product";
-var ruta_de_borrar="https://paredes925.herokuapp.com/invent/public/borrar";
-var ruta_de_guardar="https://paredes925.herokuapp.com/invent/public/guardar";
-var ruta_de_actualizar="https://paredes925.herokuapp.com/invent/public/actualizar";
-var ruta_de_elegir="https://paredes925.herokuapp.com/invent/public/elegir";
-
-
+/*
+var ruta="https://eiusdbwf.lucusvirtual.es/autocomplete";
+var ruta_de_listar="https://eiusdbwf.lucusvirtual.es/product";
+var ruta_de_borrar="https://eiusdbwf.lucusvirtual.es/borrar";
+var ruta_de_guardar="https://eiusdbwf.lucusvirtual.es/guardar";
+var ruta_de_actualizar="https://eiusdbwf.lucusvirtual.es/actualizar";
+var ruta_de_elegir="https://eiusdbwf.lucusvirtual.es/elegir";
+*/
 
 //local 
-/*
+
 var ruta="http://localhost:8080/invent/public/autocomplete";
 var ruta_de_listar="http://localhost:8080/invent/public/product";
 var ruta_de_borrar="http://localhost:8080/invent/public/borrar";
@@ -24,7 +22,6 @@ var ruta_de_guardar="http://localhost:8080/invent/public/guardar";
 var ruta_de_actualizar="http://localhost:8080/invent/public/actualizar";
 var ruta_de_elegir="http://localhost:8080/invent/public/elegir";
 
-*/
 
 //idioma de la tabla 
  var   idioma_español={
@@ -249,7 +246,8 @@ var ruta_de_elegir="http://localhost:8080/invent/public/elegir";
        },
        error:function(error){
        console.log(error);
-       alert('EL articulo ingresado no existe en el almacen');
+       $("#alerta_de_error").show();
+       $("#alerta_de_error").text("EL articulo ingresado no existe en el almacen");
        }
        });
      
@@ -285,7 +283,7 @@ var ruta_de_elegir="http://localhost:8080/invent/public/elegir";
     "(23.75) , (1,2,3) , (0.5) "  +"\n"+
      "(recuerda que  puede ir una  o dos cifras despues del  punto decimal) "+
      "\n"+ "Para articulos que se vendende por pieza : "+"\n"+
-     "Numeros del 1,2,3,,4,5,6,7,8 ect,");
+     "Numeros naturales 1,2,3,,4,5,6,7,8 ect,");
      $("#stock").focus(); 
      return false;
       }

@@ -1,0 +1,37 @@
+.row{
+justify-content: center;
+}
+
+
+ul li{
+	list-style: none;
+}
+
+ul li .content{
+   
+  
+	border-radius: 10px;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.1;
+	font-family: Arial;
+
+}
+
+
+ul li:hover .content{
+
+
+	visibility: visible;
+	opacity: 1;
+	transform: translateX(-50%) translateY(0px);
+}
+
+
+
+.content span{
+
+padding-top: 20px;
+
+} 
+

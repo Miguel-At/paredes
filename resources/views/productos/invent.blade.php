@@ -1,8 +1,8 @@
 @extends('layouts.app')
-  
+   
 
 @section('content')
-   
+   <link rel="stylesheet" href="{{ asset('css/mensaje.css')}}">
    <br>
 
 
@@ -10,14 +10,14 @@
 
 <div class="row">
 
-<div class="col-4">
+<div class="col-2">
 <button id="mostra_ocultar" class=" btn btn-primary"> <i class="fas fa-angle-double-up"></i></button>
 </div>
 
 
 
 
-   <div class="col-4" id="almacen">  
+   <div class="col-3" id="almacen">  
     <form  enctype="multipart/formdata">
   {{csrf_field()}}
    <div class="form-group">
@@ -32,11 +32,33 @@
   </form>
    </div>
 
-<div class="col-4" > <h4 id="inventario_de_almacen"></h4></div>
+<div class="col-4" > <h3 id="inventario_de_almacen"></h3>
+</div>
+
+
+<div class="col-3" id="contendor">
+  
+  <ul>
+    
+
+    <li>
+      
+  <a href="{{asset('manual')}}" target="_blank"  class="btn btn-outline-secondary " ><i class="fas fa-question"></i></a>
+      <div class="content" >
+  
+
+
+     <span class="text-left">Necesitas ayuda. da click  al boton para ir al manual de usuario</span>
+  
+      </div> 
+    </li>
+  </ul>
+
+
+     </div>
 
    <hr>
 </div>
- <br>
  <hr>
 <div id="ocultar" >
 <form action="" name="myform" id="myform" enctype="multipart/formdata">
@@ -51,7 +73,8 @@
   <p id="alerta_de_error"   class="alert alert-danger" role="alert"></p>
 </div>
 <hr>
-               <table id="tabla" class="table ">
+<div class="table-responsive">
+               <table id="tabla" class="table">
                <thead>
                  
                    <th>Producto</th>
@@ -62,7 +85,7 @@
                    <th>Acciones</th>
                </thead>
  </table>
-
+</div>
   <!modal eliminar !>
 
 <!-- Modal -->
@@ -131,7 +154,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-        <button type="submit" id="actualizar"  class="btn btn-primary">Guardar cambios</button>
+        <button type="submit" id="actualizar"  class="btn btn-primary">Actualizar</button>
       </div>
       </form>
     </div>

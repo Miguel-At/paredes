@@ -3,13 +3,18 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+               <meta name="csrf-token" content="{{ csrf_token() }}">
 
+
+       <link rel="stylesheet" href="{{ asset('css/estilos.css') }}">
+          <link rel="stylesheet" href="{{ asset('css/mensaje.css')}}">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css">
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
-          <link rel="stylesheet"  href="{{ asset('css/estilos.css') }}">
+     
 
               
-               <meta name="csrf-token" content="{{ csrf_token() }}">
+                    
                 <title>Inventario</title>
                 </head>
                 <body>

@@ -22,7 +22,7 @@ Route::get('mostrar/{id}','InventarioController@show');
 Route::get('productos','InventarioController@index');
 Route::post('actualizar','InventarioController@actualizar');
 
-
+Route::get('/manual','InventarioController@manual');
 
 
 //rutas referentes a todo lo del inventario (eliminar, mostrat, actualizar etc.)
@@ -34,3 +34,4 @@ Route::post('/autocomplete', 'Almacen@fetch')->name('autocomplete.fetch');
 Route::post('/guardar','Almacen@store');
 Route::put('/actualizar/{id}','Almacen@update');
 Route::delete('/borrar/{user}', 'Almacen@destroy');
+
